@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class ViewController: UIViewController {
+class ResulrviewControllerViewController: UIViewController {
     
     //一番後ろの背景を表示
     @IBOutlet var haikeiImageView: UIImageView!

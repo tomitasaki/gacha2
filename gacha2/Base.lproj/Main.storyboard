@@ -20,21 +20,19 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gacha.png" translatesAutoresizingMaskIntoConstraints="NO" id="i02-4o-KEj">
                                 <rect key="frame" x="0.0" y="28" width="320" height="571"/>
                             </imageView>
-                            <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="まわす" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqg-rN-rdG">
-                                <rect key="frame" x="105" y="339" width="111" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="mjA-DX-eZU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44x-58-JFX">
+                                <rect key="frame" x="138" y="345" width="45" height="30"/>
+                                <state key="normal" title="まわす"/>
+                                <connections>
+                                    <action selector="gacha" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLj-nq-tRs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="HVu-dw-3CA" kind="presentation" identifier="reselt" modalTransitionStyle="crossDissolve" id="YcC-sp-7aC"/>
+                        <segue destination="HVu-dw-3CA" kind="presentation" identifier="result" modalTransitionStyle="crossDissolve" id="YcC-sp-7aC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,23 +51,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIV-Oa-t8V">
+                                <rect key="frame" x="-190" y="-93" width="700" height="700"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-0X-TLD">
-                                <rect key="frame" x="137" y="356" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="138" y="356" width="45" height="30"/>
+                                <state key="normal" title="もどる"/>
                                 <connections>
+                                    <action selector="modoru" destination="HVu-dw-3CA" eventType="touchUpInside" id="H2w-kT-oQh"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="him-lK-dVj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPx-d6-GfG">
                                 <rect key="frame" x="40" y="102" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIV-Oa-t8V">
-                                <rect key="frame" x="0.0" y="12" width="320" height="568"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="haikeiImageView" destination="XIV-Oa-t8V" id="ncz-Fc-3zu"/>
+                        <outlet property="monsterImageView" destination="OPx-d6-GfG" id="Vkv-jb-xav"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QG-fG-SfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
