@@ -23,6 +23,9 @@ class ResulrviewControllerViewController: UIViewController {
         //0〜9の間でランダムにint数値発生
         let number = Int(rand() % 9)
         //monsterArray配列に画像を１０枚追加保存
+        //gdl;akfjalksd
+        ///djfaskdf;aldskjfa
+        
         monsterArray = [UIImage(named: "monster001.png")!,
             UIImage(named: "monster002.png")!,
             UIImage(named: "monster003.png")!,
