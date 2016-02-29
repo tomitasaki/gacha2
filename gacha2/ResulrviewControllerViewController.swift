@@ -1,10 +1,4 @@
-//
-//  ResulrviewControllerViewController.swift
-//  gacha2
-//
-//  Created by hmlab book pro on 2016/02/11.
-//  Copyright © 2016年 hmlab book pro. All rights reserved.
-//
+
 import UIKit
 
 class ResulrviewControllerViewController: UIViewController {
@@ -81,14 +75,5 @@ class ResulrviewControllerViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }

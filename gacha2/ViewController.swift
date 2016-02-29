@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  gacha2
-//
-//  Created by hmlab book pro on 2016/02/11.
-//  Copyright © 2016年 hmlab book pro. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -26,7 +18,6 @@ class ViewController: UIViewController {
         //画面遷移
         self.performSegueWithIdentifier("result", sender: nil)
     }
-    
     
 }
 
